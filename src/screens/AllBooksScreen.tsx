@@ -53,13 +53,13 @@ const AllBooksScreen = () => {
                         showsVerticalScrollIndicator={false}
                     />
 
-                    <TouchableOpacity
+                    {/* <TouchableOpacity
                         style={styles.addBookBtn}
                         onPress={() => navigation.navigate('AddBook')}
                         activeOpacity={0.8}>
                         <FontAwesome name="plus" size={22} color="#fff" />
                         <Text style={styles.addBookText}>Yeni Kitap Ekle</Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                 </SafeAreaView>
             </ImageBackground>
         </SafeAreaProvider>
@@ -100,28 +100,28 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         color: '#333',
     },
-    addBookBtn: {
-        position: 'absolute',
-        right: 20,
-        bottom: 30,
-        flexDirection: 'row',
-        alignItems: 'center',
-        backgroundColor: '#007AFF',
-        paddingHorizontal: 18,
-        paddingVertical: 14,
-        borderRadius: 30,
-        shadowColor: '#007AFF',
-        shadowOffset: { width: 0, height: 6 },
-        shadowOpacity: 0.3,
-        shadowRadius: 8,
-        elevation: 6,
-    },
-    addBookText: {
-        color: '#fff',
-        fontSize: 17,
-        marginLeft: 10,
-        fontWeight: '700',
-    },
+    // addBookBtn: {
+    //     position: 'absolute',
+    //     right: 20,
+    //     bottom: 30,
+    //     flexDirection: 'row',
+    //     alignItems: 'center',
+    //     backgroundColor: '#007AFF',
+    //     paddingHorizontal: 18,
+    //     paddingVertical: 14,
+    //     borderRadius: 30,
+    //     shadowColor: '#007AFF',
+    //     shadowOffset: { width: 0, height: 6 },
+    //     shadowOpacity: 0.3,
+    //     shadowRadius: 8,
+    //     elevation: 6,
+    // },
+    // addBookText: {
+    //     color: '#fff',
+    //     fontSize: 17,
+    //     marginLeft: 10,
+    //     fontWeight: '700',
+    // },
     editBtn:{
        position:'absolute',
        right:23

@@ -13,7 +13,7 @@ import { RootStackParamList } from '../../App';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 
-const homeBackgroundImage = require('../../assets/homePage.png');
+const homeBackgroundImage = require('../../assets/home.jpg');
 
 const HomeScreen = () => {
 
@@ -33,6 +33,14 @@ const HomeScreen = () => {
                         activeOpacity={0.8}
                     >
                         <Text style={styles.allBookText}>Tüm Kitaplar</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={styles.allBooksPage}
+                        onPress={() => navigation.navigate('FavoriteBooks')}
+                        activeOpacity={0.8}
+                    >
+                        <Text style={styles.allBookText}>Favori Kitaplar</Text>
                     </TouchableOpacity>
                 </SafeAreaView>
             </ImageBackground>
@@ -56,12 +64,16 @@ const styles = StyleSheet.create({
         height: 50,
         backgroundColor: '#333',
         borderRadius:90,
+        margin:4,
+        cursor:'pointer'
     }, 
     allBookText:{
         textAlign:'center',
         fontSize: 23,
         color: '#ffff',
-        paddingTop:10
-   }
+        paddingTop:10,
+
+   },
+   
 })
 export default HomeScreen
